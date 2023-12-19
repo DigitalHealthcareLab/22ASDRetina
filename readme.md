@@ -31,3 +31,7 @@ run `3_bootstrap_and_figure.ipynb`
 bash 4_OOD_inference.py
 ```
 
+# Data
+Our data can be accessed at the following link
+
+https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=115&topMenu=100&aihubDataSe=data&dataSetSn=71516
