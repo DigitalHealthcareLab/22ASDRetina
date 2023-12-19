@@ -1,6 +1,7 @@
 # Project Name : Development of deep ensembles for screening autism spectrum disorder and symptom severity using retinal photographs
 
-- date : 2023-05-21 
+- date : 2023-05-21
+  - updated : 2023-12-19
 - python version : 3.9.7
 
 # Objective
