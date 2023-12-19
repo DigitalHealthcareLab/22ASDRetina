@@ -102,21 +102,7 @@ def process_single_image(image_path : Path, image_save_path : Path) :
     image = remove_black_area_1(image_path)
     image = crop_circle(image)
     image = remove_black_area_2(image)
-
-    # LAB에 적용    
-    # clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8,8))
-    # lab = cv2.cvtColor(image, cv2.COLOR_BGR2LAB)
-    # l, a, b = cv2.split(lab)
-    # l_clahe = clahe.apply(l)
-    # lab = cv2.merge((l_clahe, a, b))
-    # image = cv2.cvtColor(lab, cv2.COLOR_LAB2BGR)
-    
     image = cv2.resize(image, (224, 224))
-
-    # image[:,:,0] = 0  #
-    # image[:,:,1] = 0    #R
-    # image[:,:,2] = 0    #
-    # B/ G / R
 
     image_save_path.parent.mkdir(exist_ok=True, parents=True)
     cv2.imwrite(image_save_path.as_posix(), image)

@@ -170,7 +170,7 @@ def ResNeXt50(num_classes):
 
 
     for param in model.parameters():
-        param.requires_grad = True
+        param.requires_grad = False
     
     model.apply(weight_init_xavier_uniform)
 

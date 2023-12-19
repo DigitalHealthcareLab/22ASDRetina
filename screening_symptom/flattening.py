@@ -47,13 +47,3 @@ class file_processing():
             sh.copy(file ,copy_path)
 
         print('file copy success.')
-
-if __name__ == '__main__':
-    path = '/home/jaehan0605/MAIN_ASDfundus/NEW_REAL_LAST'
-    mv_path = '/home/jaehan0605/MAIN_ASDfundus/OOD_images/NEW_REAL_LAST_FLAT'
-
-    f = file_processing(path=path ,move_path = mv_path)
-    f.find_file_path_lv1()
-    f.find_file_path()
-    #f.file_move(mv_path)
-    f.file_copy(mv_path)
